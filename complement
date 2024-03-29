@@ -1,0 +1,20 @@
+import math
+sequence = input("Give me a DNA using CTGA in any order: ")
+m = {"A":"T","T":"A","G":"C","C":"G"}
+# write the complement function
+def complement (sequence, m):
+    out = ""
+    for char in sequence:
+        if char in m:
+            out += m[char]
+        else:
+            print("Error use the right characters: CTGA in any order")
+    return out
+def reverse_complement(sequence):
+    good = sequence[::-1]
+    reverse1 = complement(good,m)
+    return reverse1
+c = complement(sequence,m)
+r = reverse_complement(sequence)
+print(r)
+print(c)
