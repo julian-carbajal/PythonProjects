@@ -1,0 +1,28 @@
+# calculate compound interest
+
+import math
+
+starting_money = float(input("Enter principal amount: "))
+years = int(input("Enter years: "))
+interest= float(input("Enter interest rate: "))
+
+# calculate compound interest using formula
+
+comp_int = starting_money * (((1 + (interest/100)) ** (years)))
+
+
+print('Compound Interest is:')
+
+# utilized int function to round to nearest whole dollar
+print(int(comp_int), "dollars")
+
+
+
+def compound_interest(principal, rate, time):
+    CI = principal * (pow((1 + rate / 100), time)) 
+    return CI
+
+
+print(compound_interest(1000, 5, 10))
+print(compound_interest(1000, 5, 20))
+print(compound_interest(1000, 10, 10))
