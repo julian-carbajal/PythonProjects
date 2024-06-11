@@ -1,0 +1,63 @@
+# math program in python to practice mathematical operations
+
+def add(a, b):
+    return a + b
+
+
+def sub(a, b):
+    return a - b
+
+def mul(a, b):
+    return a * b
+
+def div(a, b):
+    return a / b
+
+def mod(a, b):
+    return a % b
+
+def pow(a, b):
+    return a ** b
+
+def floor_div(a, b):
+    return a // b
+
+def sum_even_num(a, b):
+    return (a + b) // 2
+
+
+
+def main():
+    input1 = int(input("Enter first number: ")) 
+    input2 = int(input("Enter second number: "))
+    operator = input("Enter operator: ")
+
+    if operator == "+":
+        print(add(input1, input2))
+
+    elif operator == "-":
+        print(sub(input1, input2))
+
+    elif operator == "*":
+        print(mul(input1, input2))
+
+    elif operator == "/":
+        print(div(input1, input2))
+
+    elif operator == "%":
+        print(mod(input1, input2))
+
+    elif operator == "**":
+        print(pow(input1, input2))
+
+    elif operator == "//":
+        print(floor_div(input1, input2))
+
+    elif operator == "sum":
+        print(sum_even_num(input1, input2))
+
+    else:
+        print("Invalid operator")
+
+
+main()
